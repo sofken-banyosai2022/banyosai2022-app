@@ -21,7 +21,23 @@
 
   /* マウント時 */
   onMounted(async () => {
-    const result: data = await $fetch("/api/query?col=users"); // Firebaseデータ取得
+
+    // Firebaseデータ取得
+    const result: data = await $fetch("/api/query?col=users");
+
+    // Firebaseデータ追加
+    // await $fetch("/api/add?col=users", {
+    //   method: "POST",
+    //   body: {
+    //     first: "Alan",
+    //     middle: "Mathison",
+    //     last: "Turing",
+    //     born: 1912
+    //   },
+    // });
+
+    // Firebaseデータ削除
+    // const result: data = await $fetch("/api/delete?col=users&id=user");
 
     console.log(result); // ログ出力
     pages.value = result; // ページを更新
