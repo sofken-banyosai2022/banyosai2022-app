@@ -23,7 +23,7 @@
 
     <!-- タブ -->
     <v-tabs color="primary">
-      <v-tab height="100%" v-for="(item, i) in items" :key="i" :href="item.url">
+      <v-tab v-for="(item, i) in items" :key="i" :href="item.url" class="my-4">
         {{item.text}}
       </v-tab>
     </v-tabs>
