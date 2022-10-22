@@ -1,7 +1,7 @@
 <template>
   <div v-show="show" :class="loading">
     <div class="loading_inner">
-      <v-img :width="iconSize" :height="iconSize" src="../assets/img/icon.webp"></v-img>
+      <v-img :width="iconSize" :height="iconSize" src="/img/icon.webp"></v-img>
     </div>
   </div>
 </template>

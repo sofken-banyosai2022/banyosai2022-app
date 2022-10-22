@@ -118,7 +118,7 @@
 
   .main_visual__image {
     height: 50vh;
-    background: url("../assets/img/main_visual_01.webp");
+    background: url("/img/main_visual_01.webp");
     background-size: cover;
     background-position: center center;
 
