@@ -44,6 +44,12 @@
 </template>
 
 <script setup lang="ts">
+
+  /* レイアウト設定 */
+  definePageMeta({
+    layout: "none"
+  });
+
   const tab = ref(null);
   const links: string[] = [
     'Dashboard',

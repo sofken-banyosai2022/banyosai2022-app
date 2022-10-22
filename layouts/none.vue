@@ -1,7 +1,5 @@
 <template>
   <v-app>
-    <TheHeader />
     <slot />
-    <TheFooter />
   </v-app>
 </template>

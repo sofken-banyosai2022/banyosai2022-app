@@ -6,6 +6,11 @@
 
 <script setup lang="ts">
 
+  /* レイアウト設定 */
+  definePageMeta({
+    layout: "none"
+  });
+
   /* Firebaseの型 */
   type data = {
     result: object[];
