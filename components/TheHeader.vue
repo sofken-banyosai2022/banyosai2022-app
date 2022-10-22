@@ -17,7 +17,7 @@
     <!-- ロゴ -->
     <v-toolbar-title>
       <v-btn height="100%" :ripple="false" color="#ffffff" class="pa-0" href="#">
-      <v-img :width="logoWidth" height="48" src="../assets/img/logo.png"></v-img>
+      <v-img :width="logoWidth" height="48" src="../assets/img/logo.webp"></v-img>
     </v-btn>
     </v-toolbar-title>
 
@@ -59,7 +59,7 @@
     return display.smAndDown.value ? "px-0" : "px-4"; // モバイル:"px-0", ディスクトップ:"px-4"
   });
   const logoWidth = computed(() => {
-    return display.smAndDown.value ? 180 : 240; // モバイル:150px, ディスクトップ:240px
+    return display.smAndDown.value ? 180 : 240; // モバイル:180px, ディスクトップ:240px
   });
 </script>
 

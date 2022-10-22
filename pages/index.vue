@@ -1,5 +1,8 @@
 <template>
 
+    <!-- ローディング -->
+    <Loading />
+
     <!-- メイン -->
     <v-main>
 
@@ -115,7 +118,7 @@
 
   .main_visual__image {
     height: 50vh;
-    background: url("../assets/img/main_visual_01.jpg");
+    background: url("../assets/img/main_visual_01.webp");
     background-size: cover;
     background-position: center center;
 
