@@ -1,6 +1,6 @@
-# Nuxt 3 Minimal Starter
+# Banyosai2022 App
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+App used in Banyosai2022
 
 ## Setup
 
