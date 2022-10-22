@@ -38,7 +38,7 @@
   import { useDisplay } from 'vuetify';
   import { computed } from "vue";
 
-  const selectedItem = 1;
+  const selectedItem = ref(1);
   const drawer = useState('drawer', () => false); // サイドナビの表示・非表示制御
   const items = [
     { text: 'HOME', url: '#' },
