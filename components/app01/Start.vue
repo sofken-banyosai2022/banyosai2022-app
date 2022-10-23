@@ -16,19 +16,71 @@
 </template>
 
 <script setup lang="ts">
+  import FingerprintJS from '@fingerprintjs/fingerprintjs';
 
   /* グローバル変数 */
   const time = 1000;
   const start = ref('start');
   const show = ref(true);
 
+  /* Firebaseの型 */
+  type data = {
+    result: object[];
+  };
+
   /* ボタンが押されたとき */
   const startBtnClick = () => {
     start.value = 'start hidden'; // startを透過
+    sendData(); // サーバにデータを送信
 
     setTimeout(() => {
       show.value = false; // startを非表示
     }, time);
+  };
+
+  /* サーバにデータを送信 */
+  const sendData = async () => {
+    const visitorId = await getVisitorId(); // Fingerprint
+    const result: data = await $fetch(`/api/query?col=users&id=${visitorId}`); // Firebaseデータ取得
+
+    // 登録済みか判定
+    if (result.result.length) {
+
+      // Firebaseデータ更新
+      await $fetch(`/api/update?col=users&id=${result.result[0]['id']}`, {
+        method: "POST",
+        body: {},
+      });
+
+      console.log('logged in!');
+    } else {
+      const nameData: data = await $fetch('/api/query?col=users'); // Firebase名前取得
+      let number = Number(nameData.result[0]['name'].substring(2)); // id番号
+
+      number++; // 次の番号にする
+
+      const name = `id${('000' + number).slice(-3)}`; // 'id000'の型にする
+
+      // Firebaseデータ追加
+      await $fetch("/api/add?col=users", {
+        method: "POST",
+        body: {
+          name: name,
+          visitorId: visitorId
+        },
+      });
+
+      console.log('Welcome!');
+    }
+  };
+
+  /* Fingerprint */
+  const getVisitorId = async () => {
+    const fpPromise = FingerprintJS.load(); // 初期化
+    const fp = await fpPromise;
+    const result = await fp.get();
+
+    return result.visitorId;
   };
 </script>
 
