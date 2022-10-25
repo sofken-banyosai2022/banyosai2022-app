@@ -12,7 +12,7 @@
   </v-navigation-drawer>
 
   <!-- トップナビ -->
-  <v-app-bar elevation="3" :height="AppBarHeight" app>
+  <v-app-bar elevation="3" height="80" app>
 
     <!-- ロゴ -->
     <v-toolbar-title>
@@ -29,7 +29,7 @@
     </v-tabs>
 
     <!-- ハンバーガーメニュー -->
-    <v-app-bar-nav-icon @click="drawer=!drawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click="drawer=!drawer" style="font-size: 24px;"></v-app-bar-nav-icon>
 
   </v-app-bar>
 </template>
@@ -52,9 +52,6 @@
   /* レスポンシブ */
   const display = useDisplay();
 
-  const AppBarHeight = computed(() => {
-    return display.smAndDown.value ? 50 : 80; // モバイル:50px, ディスクトップ:80px
-  });
   const AppBarPx = computed(() => {
     return display.smAndDown.value ? "px-0" : "px-4"; // モバイル:"px-0", ディスクトップ:"px-4"
   });
