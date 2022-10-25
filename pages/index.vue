@@ -7,21 +7,7 @@
     <v-main>
 
       <!-- メインビジュアル -->
-      <section class="main_visual">
-        <v-container class="main_visual__image" fluid></v-container>
-        <v-container class="main_visual__content" fluid>
-          <v-row>
-            <v-col class="main_visual__content-text">
-              <p>Welcome to Banyosai !</p>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col class="main_visual__content-text">
-              <p>2022 11/5</p>
-            </v-col>
-          </v-row>
-        </v-container>
-      </section>
+      <MainVisual />
 
       <!-- グリッド -->
       <v-container class="py-16">
@@ -103,53 +89,6 @@
 @mixin md {
   @media (min-width: 960px) {
     @content;
-  }
-}
-
-/* メインビジュアル */
-.main_visual {
-  height: 50vh;
-  position: relative;
-  overflow: hidden;
-
-  @include pc {
-    height: 100vh;
-  }
-
-  .main_visual__image {
-    height: 50vh;
-    background: url("/img/main_visual_01.webp");
-    background-size: cover;
-    background-position: center center;
-
-    @include pc {
-      height: 100vh;
-      transform: scale(1.1);
-      transition: 2s ease-in-out;
-    }
-
-    &:hover {
-      transform: scale(1.0);
-    }
-  }
-
-  .main_visual__content {
-    position: absolute;
-    top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-  
-    &-text {
-      font-size: 48px;
-      color: #fff;
-      text-align: center;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
-    
-      @include pc {
-        font-size: 96px;
-      }
-    }
   }
 }
 </style>
