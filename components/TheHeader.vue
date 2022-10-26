@@ -1,13 +1,14 @@
 <template>
 
   <!-- サイドナビ -->
-  <v-navigation-drawer v-model="drawer" fixed temporary>
-    <v-list nav dense>
-      <v-list-item-group v-model="selectedItem" color="primary">
-        <v-list-item v-for="(item, i) in items" :key="i" :href="item.url">
-          <v-list-item-title v-text="item.text"></v-list-item-title>
+  <v-navigation-drawer v-model="drawer" temporary location="right" class="bg-primary">
+    <v-btn icon="mdi-close" variant="text" @click="drawer=!drawer"></v-btn>
+    <v-list nav>
+      <v-list-item v-model="selectedItem">
+        <v-list-item v-for="(item, i) in tabItems" :key="i" :href="item.url">
+          <p>{{item.text}}</p>
         </v-list-item>
-      </v-list-item-group>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 
@@ -23,7 +24,7 @@
 
     <!-- タブ -->
     <v-tabs color="primary">
-      <v-tab v-for="(item, i) in items" :key="i" :href="item.url" class="my-4">
+      <v-tab v-for="(item, i) in tabItems" :key="i" :href="item.url" class="my-4">
         {{item.text}}
       </v-tab>
     </v-tabs>
@@ -39,14 +40,16 @@
   import { computed } from "vue";
 
   const selectedItem = ref(1);
-  const drawer = useState('drawer', () => false); // サイドナビの表示・非表示制御
-  const items = [
-    { text: 'HOME', url: '#' },
+
+  /* サイドナビの表示・非表示制御 */
+  const drawer = useState('drawer', () => false);
+
+  /* タブの内容 */
+  const tabItems = [
     { text: 'ABOUT', url: '#' },
-    { text: 'WORK', url: '#' },
-    { text: 'SERVICE', url: '#' },
-    { text: 'BLOG', url: '#' },
-    { text: 'ACCESS', url: '#' },
+    { text: 'WORKS', url: '#' },
+    { text: 'MEMBER', url: '#' },
+    { text: 'ACCESS', url: '#' }
   ];
 
   /* レスポンシブ */
@@ -75,11 +78,20 @@
   }
 }
 
+/* サイドナビ */
+.v-navigation-drawer {
+
+  .v-btn {
+    font-size: 24px;// ボタンサイズを設定
+    margin: 15px 10px 15px calc(100% - 60px);
+  }
+}
+
 /* トップナビ */
 .v-toolbar {
 
   @include md {
-    padding: 0 16px 0; // Medium以上はpaddingを追加
+    padding: 0 5% 0; // Medium以上はpaddingを追加
   }
 
   .v-app-bar-nav-icon {
@@ -98,6 +110,11 @@
 
     .v-tab {
       font-size: 100%; // タブの文字サイズを設定
+      border-radius: 3px !important; // 角を丸くする
+
+      &:hover {
+        opacity: .6; // 透明度を設定
+      }
     }
   }
 }
