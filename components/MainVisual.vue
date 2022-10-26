@@ -8,9 +8,13 @@
     </div>
 
     <v-container class="main_visual__content" fluid>
-      <v-row>
-        <v-col class="main_visual__content-text">
-          <p>Welcome to Banyosai !</p>
+      <v-row class="main_visual__content-image px-2 py-4">
+        <v-col cols="6" lg="4" offset-lg="2">
+          <v-img src="/img/gakuensai.webp"></v-img>
+          <v-img src="/img/banyosai.webp"></v-img>
+        </v-col>
+        <v-col cols="6" lg="4">
+          <v-img src="/img/date.webp"></v-img>
         </v-col>
       </v-row>
     </v-container>
@@ -19,6 +23,10 @@
 </template>
 
 <style  lang="scss" scoped>
+
+/* グローバル変数 */
+$primary: rgba(0, 113, 243, 0.5);
+
 /* PC */
 @mixin pc {
   @media (min-width: 1264px) {
@@ -40,7 +48,7 @@
   overflow: hidden;
 
   @include pc {
-    height: 100vh;
+    height: 95vh;
   }
 
   .main_visual__images {
@@ -55,7 +63,7 @@
       animation: imageChanger 24s linear infinite;
 
       @include pc {
-        height: 100vh;
+        height: 95vh;
       }
 
       // メイン画像
@@ -81,21 +89,13 @@
   }
 
   .main_visual__content {
+    bottom: 0;
+    padding: 0;
     position: absolute;
-    top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
-  
-    &-text {
-      font-size: 48px;
-      color: #fff;
-      text-align: center;
-      font-weight: bold;
-      text-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
-    
-      @include pc {
-        font-size: 96px;
-      }
+    overflow: hidden;
+
+    &-image {
+      background: linear-gradient(to right, $primary 0%, rgba(0, 0, 0, 0.1) 50%);
     }
   }
 }
