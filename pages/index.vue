@@ -11,6 +11,23 @@
 
       <!-- カウントダウン -->
       <Countdown />
+
+      <!-- ABOUT -->
+      <v-container>
+        <h2 class="text-h2 py-4">ABOUT</h2>
+        <v-row justify="center">
+          <v-col cols="12" sm="8" md="10">
+            <v-card color="primary" class="about">
+              <v-card-title class="pt-6" style="font-weight: bold;">アイデアを「カタチ」にする</v-card-title>
+              <v-card-text class="pt-6">
+                <p>ソフトウェア研究会は、自ら考え、チームで協力して様々な活動を行う研究会です。</p>
+                <p>プログラミングコンテストへの参加、ゲーム制作、電子工作、イラストなど、幅広い活動を行っています。</p>
+                <p>モノづくりがスキな高専生が集まっているからこそ、無限大の可能性と多様性に富んだプロジェクトを実現しています！</p>
+              </v-card-text>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
       
       <!-- WORKS -->
       <v-container>
@@ -158,6 +175,42 @@ $primary: rgba(0, 113, 243);
   }
 }
 
+/* ABOUT */
+.about {
+  padding: 0;
+
+
+  @include pc {
+    padding: 50px 30px;
+  }
+
+  .v-card-title {
+    text-align: center;
+    font-size: 1.3em;
+
+    @include pc {
+      font-size: 1.5em;
+    }
+  }
+  .v-card-text {
+    line-height: 30px;
+    font-size: 1em;
+
+    @include pc {
+      line-height: 50px;
+      font-size: 1.3em;
+    }
+
+    p {
+      padding: 10px 0;
+
+      @include pc {
+        padding: 0;
+      }
+    }
+  }
+}
+
 /* MEMBER */
 .menber__name-text {
   font-size: 1.2em;
@@ -166,7 +219,7 @@ $primary: rgba(0, 113, 243);
   text-align: center;
 
   @include pc {
-   font-size: 1.5em;
+    font-size: 1.5em;
   }
 
   &-title {
