@@ -109,6 +109,8 @@ $primary: rgba(0, 113, 243);
 /* コンテナ設定 */
 .v-container {
   max-width: 100%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 
   @include pc {
     max-width: 80%;
@@ -116,21 +118,21 @@ $primary: rgba(0, 113, 243);
 
   // 章タイトル
   .text-h2 {
-  padding-bottom: 100px !important;
-  font-size: 2em !important;
-  letter-spacing: 0.1em !important;
-  font-family: 'Space Grotesk', sans-serif !important;
-  text-align: center;
+    padding-bottom: 10% !important;
+    font-size: 2em !important;
+    letter-spacing: 0.1em !important;
+    font-family: 'Space Grotesk', sans-serif !important;
+    text-align: center;
 
-  @include pc {
-   font-size: 5em !important;
-  }
+    @include pc {
+     font-size: 5em !important;
+    }
 
-  &::first-letter {
-    font-size: 1.5em;
-    color: $primary;
+    &::first-letter {
+      font-size: 1.5em;
+      color: $primary;
+    }
   }
-}
 }
 
 /* MEMBER */
