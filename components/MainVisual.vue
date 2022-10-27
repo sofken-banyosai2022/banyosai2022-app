@@ -107,8 +107,8 @@ $height-pc: 95vh; // メインビジュアルの高さ（PC）
 // 画像切替アニメーション
 @keyframes imageChanger {
   0% {
-    opacity: 0;
-    transform: scale(1.2);
+    // opacity: 0;
+    // transform: scale(1.2);
   }
   4.16% {
     opacity: 1;
@@ -117,11 +117,11 @@ $height-pc: 95vh; // メインビジュアルの高さ（PC）
     opacity: 1;
   }
   41.66% {
-    opacity: 0;
-    transform: scale(1.0);
+    // opacity: 0;
+    // transform: scale(1.0);
   }
   100% {
-    opacity: 0;
+    // opacity: 0;
   }
 }
 </style>
