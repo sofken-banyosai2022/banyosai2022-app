@@ -12,11 +12,14 @@
       <!-- WORKS -->
       <v-container>
         <h2 class="text-h2 py-4">WORKS</h2>
-        <v-row v-for="(item) in workList" :key="item.title" justify="center">
-          <v-col cols="12" lg="8">
-            <v-card class="works-card" elevation="2" color="primary">
-              <v-card-title class="ma-4">{{ item.title }}</v-card-title>
-              <v-img height="100%" src="https://picsum.photos/1600/900?random=1"></v-img>
+        <v-row justify="center">
+          <v-col v-for="item in workList" :key="item.title" cols="12" sm="8" md="5">
+            <v-card color="primary">
+              <v-img class="align-end text-white" height="200" :src="item.image" cover>
+                <v-card-title style="font-weight: bold;">{{ item.title }}</v-card-title>
+              </v-img>
+              <v-card-subtitle class="pt-4">{{ item.subTitle }}</v-card-subtitle>
+              <v-card-text>{{ item.des }}</v-card-text>
             </v-card>
           </v-col>
         </v-row>
@@ -26,7 +29,7 @@
       <v-container>
         <h2 class="text-h2 py-4">MEMBER</h2>
         <v-row justify="center">
-          <v-col v-for="(item) in memberList" :key="item.title" cols="6" lg="5" class="menber__name-text">
+          <v-col v-for="(item) in memberList" :key="item.title" cols="5" lg="5" class="menber__name-text">
             <p class="menber__name-text-title">{{item.title}}</p>
             <p class="menber__name-text-name">{{item.name}}</p>
           </v-col>
@@ -59,20 +62,37 @@
 </template>
 
 <script setup lang="ts">
-  const items = [
-    { text: 'HOME', url: '#' },
-    { text: 'ABOUT', url: '#' },
-    { text: 'WORK', url: '#' },
-    { text: 'SERVICE', url: '#' },
-    { text: 'BLOG', url: '#' },
-    { text: 'ACCESS', url: '#' },
-  ];
   const workList = [
-    { title: 'VRアート' },
-    { title: 'LEDアート' },
-    { title: 'VRフィギュア' },
-    { title: 'Unityゲーム' },
-    { title: 'サイバーボランティア' }
+    {
+      title: 'VRアート',
+      subTitle: '',
+      des: '現実世界と仮想世界がつながる新体験',
+      image: '/img/works_vr.webp'
+    },
+    {
+      title: 'LEDアート',
+      subTitle: '',
+      des: 'デジタルの世界で反応する生命',
+      image: '/img/works_led.webp'
+    },
+    {
+      title: 'VRフィギュア',
+      subTitle: '',
+      des: '仮想世界で体験するフィギュア',
+      image: '/img/works_figure.webp'
+    },
+    {
+      title: 'Unityゲーム',
+      subTitle: '',
+      des: 'ゲームから生まれるプログラミング',
+      image: '/img/works_game.webp'
+    },
+    {
+      title: 'サイバーボランティア',
+      subTitle: '',
+      des: '次世代の情報セキュリティ技術',
+      image: '/img/works_cyber.webp'
+    }
   ];
   const memberList = [
     { title: 'VRアート', name: '佐藤 龍熙' },
@@ -84,7 +104,6 @@
     { title: 'スタッフ', name: '松本 蒼矢' },
     { title: 'スタッフ', name: '蛭田 匡祐' }
   ];
-
 </script>
 
 <style lang="scss" scoped>
@@ -126,7 +145,7 @@ $primary: rgba(0, 113, 243);
     text-align: center;
 
     @include pc {
-     font-size: 5em !important;
+     font-size: 3em !important;
     }
 
     &::first-letter {
@@ -144,23 +163,12 @@ $primary: rgba(0, 113, 243);
   text-align: center;
 
   @include pc {
-   font-size: 2em;
+   font-size: 1.5em;
   }
 
   &-title {
     color: $primary;
     font-size: .7em;
-  }
-}
-
-/* WORKS */
-.works-card {
-  text-align: center;
-  display: flex;
-  max-height: 200px;
-
-  .v-card-title {
-    width: 80%;
   }
 }
 
@@ -170,7 +178,7 @@ $primary: rgba(0, 113, 243);
     font-size: 1.2em;
 
     @include pc {
-     font-size: 2em;
+     font-size: 1.5em;
     }
   }
   .access-location {
@@ -188,7 +196,7 @@ $primary: rgba(0, 113, 243);
       font-weight: 700;
 
       @include pc {
-       font-size: 1.5em;
+       font-size: 1.3em;
       }
     }
   }
