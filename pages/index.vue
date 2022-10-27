@@ -8,6 +8,9 @@
 
       <!-- メインビジュアル -->
       <MainVisual />
+
+      <!-- カウントダウン -->
+      <Countdown />
       
       <!-- WORKS -->
       <v-container>
