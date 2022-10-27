@@ -26,7 +26,7 @@
       <v-container>
         <h2 class="text-h2 py-4">MEMBER</h2>
         <v-row justify="center">
-          <v-col v-for="(item) in memberList" :key="item.title" cols="5" class="menber__name-text">
+          <v-col v-for="(item) in memberList" :key="item.title" cols="6" lg="5" class="menber__name-text">
             <p class="menber__name-text-title">{{item.title}}</p>
             <p class="menber__name-text-name">{{item.name}}</p>
           </v-col>
@@ -65,24 +65,24 @@
     { text: 'SERVICE', url: '#' },
     { text: 'BLOG', url: '#' },
     { text: 'ACCESS', url: '#' },
-];
-const workList = [
+  ];
+  const workList = [
     { title: 'VRアート' },
     { title: 'LEDアート' },
     { title: 'VRフィギュア' },
     { title: 'Unityゲーム' },
     { title: 'サイバーボランティア' }
-];
-const memberList = [
+  ];
+  const memberList = [
     { title: 'VRアート', name: '佐藤 龍熙' },
     { title: 'LEDアート', name: '岸本 篤' },
     { title: 'VRフィギュア', name: '荒井 宥希' },
     { title: 'Unityゲーム', name: '田巻 斗睦' },
     { title: 'サイバーボランティア', name: '國谷 幸平' },
-  { title: 'スタッフ', name: '中本 怜恩' },
-  { title: 'スタッフ', name: '松本 蒼矢' },
-  { title: 'スタッフ', name: '蛭田 匡祐' },
-];
+    { title: 'スタッフ', name: '中本 怜恩' },
+    { title: 'スタッフ', name: '松本 蒼矢' },
+    { title: 'スタッフ', name: '蛭田 匡祐' }
+  ];
 
 </script>
 
