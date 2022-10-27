@@ -44,6 +44,7 @@ $primary: rgba(0, 113, 243, 0.5);
 /* メインビジュアル */
 .main_visual {
   height: 50vh;
+  min-height: 500px;
   position: relative;
   overflow: hidden;
 
@@ -58,6 +59,7 @@ $primary: rgba(0, 113, 243, 0.5);
 
     .main_visual__image {
       height: 50vh;
+      min-height: 500px;
       position: absolute;
       opacity: 0;
       animation: imageChanger 24s linear infinite;
