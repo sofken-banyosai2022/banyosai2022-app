@@ -26,6 +26,8 @@
 
 /* グローバル変数 */
 $primary: rgba(0, 113, 243, 0.5);
+$height: 60vh; // メインビジュアルの高さ（Mobile）
+$height-pc: 95vh; // メインビジュアルの高さ（PC）
 
 /* PC */
 @mixin pc {
@@ -43,13 +45,13 @@ $primary: rgba(0, 113, 243, 0.5);
 
 /* メインビジュアル */
 .main_visual {
-  height: 50vh;
+  height: $height;
   min-height: 500px;
   position: relative;
   overflow: hidden;
 
   @include pc {
-    height: 95vh;
+    height: $height-pc;
   }
 
   .main_visual__images {
@@ -58,14 +60,14 @@ $primary: rgba(0, 113, 243, 0.5);
     position: relative;
 
     .main_visual__image {
-      height: 50vh;
+      height: $height;
       min-height: 500px;
       position: absolute;
       opacity: 0;
       animation: imageChanger 24s linear infinite;
 
       @include pc {
-        height: 95vh;
+        height: $height-pc;
       }
 
       // メイン画像

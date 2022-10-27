@@ -70,7 +70,10 @@ $primary: rgba(0, 113, 243);
   background: url("/img/countdown_bg.webp");
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+
+  @include pc {
+    background-attachment: fixed;
+  }
 
   &-text {
     font-size: 1em;
