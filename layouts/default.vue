@@ -18,5 +18,6 @@
     font-family: 'Space Grotesk', sans-serif;
     animation: fadeIn 1s ease 0s 1 normal;
     -webkit-animation: fadeIn 1s ease 0s 1 normal;
+    transition : all 0.5s ease 0s;
   }
 </style>

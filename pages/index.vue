@@ -49,7 +49,7 @@
       <v-container>
         <h2 id="member" class="text-h2 py-4">MEMBER</h2>
         <v-row justify="center">
-          <v-col v-for="(item) in memberList" :key="item.title" cols="5" lg="5" class="menber__name-text">
+          <v-col v-for="(item) in memberList" :key="item.title" cols="5" lg="4" class="menber__name-text">
             <p class="menber__name-text-title">{{item.title}}</p>
             <p class="menber__name-text-name">{{item.name}}</p>
           </v-col>
@@ -118,6 +118,12 @@
       subTitle: '',
       des: '次世代の情報セキュリティ技術',
       image: '/img/works_cyber.webp'
+    },
+    {
+      title: 'PCあるある',
+      subTitle: '',
+      des: '一度は経験したトラブルと役立つ知識を紹介',
+      image: '/img/works_pc.webp'
     }
   ];
   const memberList = [
@@ -126,6 +132,7 @@
     { title: 'VRフィギュア', name: '荒井 宥希' },
     { title: 'Unityゲーム', name: '田巻 斗睦' },
     { title: 'サイバーボランティア', name: '國谷 幸平' },
+    { title: 'PCあるある', name: '井上 優汰' },
     { title: 'スタッフ', name: '中本 怜恩' },
     { title: 'スタッフ', name: '松本 蒼矢' },
     { title: 'スタッフ', name: '蛭田 匡祐' }
