@@ -14,7 +14,7 @@
 
       <!-- ABOUT -->
       <v-container>
-        <h2 class="text-h2 py-4">ABOUT</h2>
+        <h2 id="about" class="text-h2 py-4">ABOUT</h2>
         <v-row justify="center">
           <v-col cols="12" sm="8" md="10">
             <v-card color="primary" class="about">
@@ -31,7 +31,7 @@
       
       <!-- WORKS -->
       <v-container>
-        <h2 class="text-h2 py-4">WORKS</h2>
+        <h2 id="works" class="text-h2 py-4">WORKS</h2>
         <v-row justify="center">
           <v-col v-for="item in workList" :key="item.title" cols="12" sm="8" md="5">
             <v-card color="primary">
@@ -47,7 +47,7 @@
 
       <!-- MEMBER -->
       <v-container>
-        <h2 class="text-h2 py-4">MEMBER</h2>
+        <h2 id="member" class="text-h2 py-4">MEMBER</h2>
         <v-row justify="center">
           <v-col v-for="(item) in memberList" :key="item.title" cols="5" lg="5" class="menber__name-text">
             <p class="menber__name-text-title">{{item.title}}</p>
@@ -58,7 +58,7 @@
 
       <!-- ACCESS -->
       <v-container class="access">
-        <h2 class="text-h2 py-4">ACCESS</h2>
+        <h2 id="access" class="text-h2 py-4">ACCESS</h2>
 
         <v-row justify="center">
           <h3 class="access-title pa-4">開催場所</h3>

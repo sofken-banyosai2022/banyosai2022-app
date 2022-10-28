@@ -46,10 +46,10 @@
 
   /* タブの内容 */
   const tabItems = [
-    { text: 'ABOUT', url: '#' },
-    { text: 'WORKS', url: '#' },
-    { text: 'MEMBER', url: '#' },
-    { text: 'ACCESS', url: '#' }
+    { text: 'ABOUT', url: '/#about' },
+    { text: 'WORKS', url: '/#works' },
+    { text: 'MEMBER', url: '/#member' },
+    { text: 'ACCESS', url: '/#access' }
   ];
 
   /* レスポンシブ */
