@@ -82,6 +82,12 @@
 </template>
 
 <script setup lang="ts">
+
+  /* head設定 */
+  useHead({
+    title: 'ソフトウェア研究会 | 磐陽祭2022',
+  })
+
   const workList = [
     {
       title: 'VRアート',
