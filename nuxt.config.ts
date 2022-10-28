@@ -1,8 +1,8 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  // publicRuntimeConfig: {
-  //   baseURL: process.env.BASE_URL
-  // },
+  publicRuntimeConfig: {
+    gaId: ''
+  },
   privateRuntimeConfig: {
     firebaseApiKey: process.env.FIREBASE_API_KEY,
     firebaseAuthDomain: process.env.FIREBASE_AUTH_DOMAIN,
