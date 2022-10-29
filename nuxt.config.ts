@@ -37,7 +37,8 @@ export default defineNuxtConfig({
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [
-        { rel: "icon", type: "image/png", href: "/img/icon.webp" },
+        { rel: "icon", type: "image/webp", href: "/img/icon.webp" },
+        { rel: "apple-touch-icon", type: "image/webp", href: "/img/icon.webp" },
       ],
     }
   }
