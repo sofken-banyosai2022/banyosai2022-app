@@ -117,10 +117,10 @@
       image: '/img/works_led_2.webp'
     },
     {
-      title: 'VRフィギュア',
-      subTitle: '　',
-      des: '仮想世界で体験するフィギュア',
-      image: '/img/works_figure.webp'
+      title: 'VR展覧会',
+      subTitle: '画廊VR',
+      des: '過去に制作したデジタルイラストをVR空間に展示',
+      image: '/img/works_figure_2.webp'
     },
     {
       title: 'Unityゲーム',
@@ -144,7 +144,7 @@
   const memberList = [
     { title: 'VRアート', name: '佐藤 龍熙' },
     { title: 'LEDアート', name: '岸本 篤' },
-    { title: 'VRフィギュア', name: '荒井 宥希' },
+    { title: 'VR展覧会', name: '荒井 宥希' },
     { title: 'Unityゲーム', name: '田巻 斗睦' },
     { title: 'サイバーボランティア', name: '國谷 幸平' },
     { title: 'PCあるある', name: '井上 優汰' },
