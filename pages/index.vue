@@ -106,37 +106,37 @@
   const workList = [
     {
       title: 'VRアート',
-      subTitle: '',
+      subTitle: '　',
       des: '現実世界と仮想世界がつながる新体験',
       image: '/img/works_vr.webp'
     },
     {
       title: 'LEDアート',
-      subTitle: '',
+      subTitle: 'Life Born from Digital',
       des: 'デジタルの世界で反応する生命',
-      image: '/img/works_led.webp'
+      image: '/img/works_led_2.webp'
     },
     {
       title: 'VRフィギュア',
-      subTitle: '',
+      subTitle: '　',
       des: '仮想世界で体験するフィギュア',
       image: '/img/works_figure.webp'
     },
     {
       title: 'Unityゲーム',
-      subTitle: '',
-      des: 'ゲームから生まれるプログラミング',
-      image: '/img/works_game.webp'
+      subTitle: 'ハコピタ',
+      des: 'unityを用いたPCゲーム',
+      image: '/img/works_game_2.webp'
     },
     {
       title: 'サイバーボランティア',
-      subTitle: '',
+      subTitle: '　',
       des: '次世代の情報セキュリティ技術',
       image: '/img/works_cyber.webp'
     },
     {
       title: 'PCあるある',
-      subTitle: '',
+      subTitle: 'あなたもあるかも？PCあるある',
       des: '一度は経験したトラブルと役立つ知識を紹介',
       image: '/img/works_pc.webp'
     }
