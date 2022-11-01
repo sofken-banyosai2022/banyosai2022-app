@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <App01BottomNav />
+    <!-- <App01BottomNav /> -->
     <slot />
   </v-app>
 </template>
