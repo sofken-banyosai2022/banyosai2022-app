@@ -1,10 +1,10 @@
 <template>
   <div v-show="show" :class="start">
 
-    <div class="start_inner">
-      <h1>ようこそ光と闇の展へ</h1>
-      <v-btn color="primary" elevation="3" rounded x-large block @click="startBtnClick">Start</v-btn>
-    </div>
+    <v-container class="start_inner" fluid>
+      <h1 class="my-16">ようこそ光と闇の展へ</h1>
+      <v-btn class="pa-4" color="#0072f3" elevation="3" rounded x-large block @click="startBtnClick">Start</v-btn>
+    </v-container>
 
     <div class="start_bg">
       <video class="start_video" poster="/img/app01_start.webp" webkit-playsinline playsinline muted autoplay loop>
@@ -97,7 +97,9 @@
   .start_inner {
     top: 50%;
     left: 50%;
+    text-align: center;
     position: absolute;
+    max-width: 500px;
     transform: translateY(-50%) translateX(-50%);
     z-index: 1;
   }
