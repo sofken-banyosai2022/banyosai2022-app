@@ -150,7 +150,9 @@
     { title: 'PCあるある', name: '井上 優汰' },
     { title: 'スタッフ', name: '中本 怜恩' },
     { title: 'スタッフ', name: '松本 蒼矢' },
-    { title: 'スタッフ', name: '蛭田 匡祐' }
+    { title: 'スタッフ', name: '蛭田 匡祐' },
+    { title: 'スタッフ', name: '吉野 優太' },
+    { title: 'スタッフ', name: '髙萩 諒' }
   ];
 </script>
 
