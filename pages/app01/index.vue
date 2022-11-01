@@ -12,7 +12,7 @@
         <h2 id="works" class="text-h4 py-4">つながる</h2>
         <v-row justify="center">
           <v-col v-for="item in workList" :key="item.title" cols="12" sm="8" md="5">
-            <v-card color="primary" @click="onClickBtn">
+            <v-card color="#0072f3" @click="onClickBtn">
               <v-img class="align-end text-white" height="200" :src="item.image" cover>
                 <v-card-title style="font-weight: bold;">{{ item.title }}</v-card-title>
               </v-img>
