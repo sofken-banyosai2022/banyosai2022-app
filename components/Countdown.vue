@@ -1,8 +1,9 @@
 <template>
   <div class="countdown pa-16">
-    <p class="countdown-text">開幕まであと</p>
+    <p class="countdown-text">磐陽祭2022は終了しました！<br>ご来場ありがとうございました！</p>
+    <!-- <p class="countdown-text">開幕まであと</p>
     <p class="countdown-time">{{ day }}日</p>
-    <p class="countdown-time">{{ hour }}:{{ min }}:{{ sec }}</p>
+    <p class="countdown-time">{{ hour }}:{{ min }}:{{ sec }}</p> -->
   </div>
 </template>
 
