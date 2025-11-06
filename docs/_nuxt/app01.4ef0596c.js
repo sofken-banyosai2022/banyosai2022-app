@@ -1,0 +1,1 @@
+import{a as t,B as n,o as s,c as p,w as l,C as r,b as c}from"./entry.fa2320e2.js";const d=t({__name:"app01",setup(_){const e=n();return e.global.name.value="dark",(a,m)=>{const o=c("v-app");return s(),p(o,null,{default:l(()=>[r(a.$slots,"default")]),_:3})}}});export{d as default};

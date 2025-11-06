@@ -18,7 +18,7 @@
     <!-- ロゴ -->
     <v-toolbar-title>
       <v-btn height="100%" :ripple="false" color="#ffffff" class="pa-0" href="#">
-      <v-img :width="logoWidth" height="48" src="/img/logo.webp"></v-img>
+      <v-img :src="useRuntimeConfig().app.baseURL + '/img/logo.webp'"></v-img>
     </v-btn>
     </v-toolbar-title>
 

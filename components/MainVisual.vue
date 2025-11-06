@@ -10,11 +10,11 @@
     <v-container class="main_visual__content" fluid>
       <v-row class="main_visual__content-image px-2 py-4">
         <v-col cols="6" lg="4" offset-lg="2">
-          <v-img src="/img/gakuensai.webp"></v-img>
-          <v-img src="/img/banyosai.webp"></v-img>
+          <v-img :src="useRuntimeConfig().app.baseURL + 'img/gakuensai.webp'"></v-img>
+          <v-img :src="useRuntimeConfig().app.baseURL + 'img/banyosai.webp'"></v-img>
         </v-col>
         <v-col cols="6" lg="4">
-          <v-img src="/img/date.webp"></v-img>
+          <v-img :src="useRuntimeConfig().app.baseURL + 'img/date.webp'"></v-img>
         </v-col>
       </v-row>
     </v-container>
