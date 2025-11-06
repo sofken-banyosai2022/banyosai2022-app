@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    baseURL: '/banyosai2022-app/',
     head: {
       charset: 'utf-16',
       viewport: 'width=device-width, initial-scale=1.0', 
