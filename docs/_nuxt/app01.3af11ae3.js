@@ -1,1 +1,0 @@
-import{a as t,A as n,o as s,c as p,w as l,B as r,b as c}from"./entry.8bd2cdbf.js";const d=t({__name:"app01",setup(_){const e=n();return e.global.name.value="dark",(a,m)=>{const o=c("v-app");return s(),p(o,null,{default:l(()=>[r(a.$slots,"default")]),_:3})}}});export{d as default};
