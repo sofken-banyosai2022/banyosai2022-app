@@ -1,0 +1,1 @@
+import{q as n,o as t,c as s,w as a,B as c,b as r}from"./entry.259229a7.js";const _={};function l(e,p){const o=r("v-app");return t(),s(o,null,{default:a(()=>[c(e.$slots,"default")]),_:3})}const d=n(_,[["render",l]]);export{d as default};

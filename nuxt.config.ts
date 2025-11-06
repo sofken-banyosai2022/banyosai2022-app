@@ -32,7 +32,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'ソフトウェア研究会 | 磐陽祭2022' },
         { property: 'og:description', content: '磐陽祭2022「ソフトウェア研究会」のWebサイトです。' },
         { property: 'og:site_name', content: 'ソフトウェア研究会 | 磐陽祭2022' },
-        { property: 'og:url', content: 'https://banyosai2022.onrender.com/' },
+        { property: 'og:url', content: 'https://sofken-banyosai2022.github.io/banyosai2022-app/' },
         { property: 'og:image', content: '/img/ogp.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
